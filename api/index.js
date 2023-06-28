@@ -1,11 +1,12 @@
 import express from 'express'
 import { Router } from 'express'
+import cors from 'cors'
 
 const app = express()
 
 const route = Router()
 
-route.get('/', (req, res) => {
+route.get('/', cors({ origin: "*",}), (req, res) => {
     return res.json({
         success: true,
         message: "asdasdasda!",
