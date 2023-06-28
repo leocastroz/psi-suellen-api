@@ -10,6 +10,7 @@ route.get('/', cors({ origin: "*",}), (req, res) => {
     return res.json({
         success: true,
         message: "asdasdasda!",
+        title: "titulo do projeto 123"
     })
 })
 
