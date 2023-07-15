@@ -9,7 +9,7 @@ const route = Router()
 route.get('/', cors({ origin: "*",}), (req, res) => {
     return res.json({
         success: true,
-        message: "Sucesso - Hello World!"
+        message: "Sucesso - Hello World1!"
     })
 })
 
