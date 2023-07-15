@@ -9,7 +9,7 @@ const route = Router()
 route.get('/', cors({ origin: "*",}), (req, res) => {
     return res.json(
         {
-            "receitas": [{
+            "TESTANDO-GUI": [{
                     "receita": "Barrinhas de cereal",
                     "ingredientes": "1 xícara de nozes, 1 xícara de frutas secas, 1 xícara de tâmaras secas sem caroço",
                     "ingredientesBase": {
