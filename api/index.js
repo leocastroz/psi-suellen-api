@@ -6,10 +6,10 @@ const app = express()
 
 const route = Router()
 
-route.get('/', cors({ origin: "*",}), (req, res) => {
+route.get('/:form', cors({ origin: "*",}), (req, res) => {
     return res.json({
         success: true,
-        message: "Sucesso - Hello World1!"
+        message: `Sucesso + ${req.params.form ?? "" } Hello World1!`
     })
 })
 
